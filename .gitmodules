@@ -1,0 +1,12 @@
+[submodule "third_party/yolov7"]
+	path = third_party/yolov7
+	url = https://github.com/WongKinYiu/yolov7
+[submodule "third_party/GroundingDINO"]
+	path = third_party/GroundingDINO
+	url = https://github.com/IDEA-Research/GroundingDINO.git
+[submodule "third_party/habitat-lab"]
+	path = third_party/habitat-lab
+	url = https://github.com/facebookresearch/habitat-lab.git
+[submodule "third_party/diff-gaussian-rasterization"]
+	path = third_party/diff-gaussian-rasterization
+	url = https://github.com/graphdeco-inria/diff-gaussian-rasterization.git

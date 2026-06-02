@@ -1,0 +1,104 @@
+name: glmap
+channels:
+  - conda-forge
+  - defaults
+  - aihabitat
+dependencies:
+  - python=3.9
+  - pip
+  - cmake
+  - ffmpeg=4.3
+  - imageio
+  - imageio-ffmpeg
+  - llvmlite=0.43
+  - matplotlib=3.9
+  - numba=0.60
+  - pyqt=6.7
+  - quaternion=2023
+  - scipy=1.13
+  - tqdm
+  - wheel
+
+  - pip:
+      # PyTorch (CUDA 12.4)
+      - --extra-index-url https://download.pytorch.org/whl/cu124
+      - torch==2.5.0
+      - torchvision==0.20.0
+      - torchaudio==2.5.0
+
+      # Deep learning & vision
+      - transformers==4.43.2
+      - timm==0.4.12
+      - accelerate==0.32
+      - safetensors
+      - tokenizers==0.19
+      - sentencepiece
+      - ultralytics==8.3
+      - salesforce-lavis==1.0.2
+
+      # 3D & geometry
+      - open3d==0.18.0
+      - plyfile
+      - pyquaternion
+
+      # VLM & detection
+      - supervision==0.26
+      - pycocotools
+      - pycocoevalcap
+      - mobile-sam @ git+https://github.com/ChaoningZhang/MobileSAM.git
+
+      # LLM
+      - ollama
+      - openai
+      - json_repair
+
+      # Config
+      - omegaconf
+      - hydra-core==1.3
+      - python-dotenv
+
+      # Web services
+      - flask
+      - aiohttp
+      - fastapi
+      - uvicorn
+
+      # Visualization & logging
+      - tensorboard
+      - plotly
+      - seaborn
+
+      # Image & video
+      - opencv-python-headless==4.5.5.64
+      - pillow
+      - moviepy
+      - decord
+
+      # Scientific
+      - numpy==1.23.5
+      - pandas
+      - scikit-learn
+      - scikit-image
+
+      # Misc
+      - einops
+      - psutil
+      - pyyaml
+      - pydantic
+      - requests
+      - websockets
+      - rich
+      - fairscale
+
+      # Dev tools
+      - pytest
+      - pre-commit
+      - black
+      - isort
+      - yapf
+
+      # --- Editable installs (run after cloning submodules) ---
+      # pip install -e third_party/diff-gaussian-rasterization
+      # pip install -e third_party/GroundingDINO
+      # pip install -e third_party/habitat-lab/habitat-lab
+      # pip install -e third_party/habitat-lab/habitat-baselines
