@@ -1,6 +1,6 @@
 # GLMap
 
-The core code for the paper *Multi-Scale Gaussian-Language Map for Zero-shot Embodied Navigation and Reasoning*, which is accepted by CVPR 2026. The preprint is available at [arXiv](https://arxiv.org/abs/2605.01736).
+This repository contains the core code for the paper *Multi-Scale Gaussian-Language Map for Zero-shot Embodied Navigation and Reasoning*, which has been accepted as a Highlight at CVPR 2026. The official paper is available via *CVPR Open Access* at [this URL](https://openaccess.thecvf.com/content/CVPR2026/html/Zhang_Multi-Scale_Gaussian-Language_Map_for_Zero-shot_Embodied_Navigation_and_Reasoning_CVPR_2026_paper.html).
 
 ## Setup
 
@@ -157,3 +157,18 @@ In addition to the projects explicitly referenced in `third_party` (such as `dif
 
 - [ApexNav](https://github.com/Robotics-STAR-Lab/ApexNav) for inspiring the manual control script.
 - [VLFM](https://github.com/rai-opensource/vlfm) for VLM framework logic.
+
+## Citation
+
+If you find our work helpful for your research, please consider citing our paper:
+
+```
+@InProceedings{Zhang_2026_CVPR,
+    author    = {Zhang, Sixian and Wang, Yiyao and Song, Xinhang and Zhang, Keming and Xu, Zijian and Jiang, Shuqiang},
+    title     = {Multi-Scale Gaussian-Language Map for Zero-shot Embodied Navigation and Reasoning},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2026},
+    pages     = {37086-37097}
+}
+```
